@@ -1,12 +1,7 @@
 import React from 'react'
-
-
-const Home = () =>{
+	function Home() {
 		return (
 			<div>
-
-				{/* <img alt="Qries" src="https://wonderfulengineering.com/wp-content/uploads/2014/10/wallpaper-photos-31.jpg" width="100%" height="600" /> */}
-
 				<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
 					<ol className="carousel-indicators">
 						<li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -36,6 +31,4 @@ const Home = () =>{
 			</div>
 		)
 	}
-
 export default Home
-
