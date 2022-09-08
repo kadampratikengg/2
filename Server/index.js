@@ -1,11 +1,17 @@
-import express from "express"
-import mongoose from "mongoose"
+const express = require("express");
+const mongoose = require("mongoose");
 
 const app = express();
-
-const url='mongodb+srv://pratik:pratik@cluster0.kktrp4r.mongodb.net/?retryWrites=true&w=majority'
-var PORT = process.env.PORT || 5000
-
-mongoose.connect (url,{useNewUrlParser: true, useUnifiedTopology: true }) 
-.then(() => app.listen(PORT, () => console.log(`Server running on port:${PORT}`)))
-.catch((error) => console.log(error.message))  
+app.use(express.json());
+const url = "mongodb+srv://pratik:pratik@cluster0.kktrp4r.mongodb.net/?retryWrites=true&w=majority";
+const conn=mongoose.connect(url).
+  catch(error => handleError(error));
+  if(conn){
+    console.log('connected');
+  }
+  else{
+    console.log('not connected')
+  }
+app.listen(5000, () => {
+    console.log("Server is running at port 5000");
+  }); 

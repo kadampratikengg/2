@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import Signup from './Signup'
+import Signup from './Signupform'
 function Card() {
   const navigate = useNavigate()
   return (
@@ -8,16 +8,8 @@ function Card() {
       <div className="">
         <div className="card border border-danger">
           <div className="card-body bg-success text-dark bg-opacity-25" style={{height: "350px"}}>
-          
           <button type="button" className="open me-5">Customer Login</button>
           <button type="button" className="open me-5">Authorize User</button>  
-            
-           
-
-
-           
-     
-            
             <form className="px-4 py-3">
                 <div className="mb-3">
                   <label htmlFor="exampleDropdownFormEmail1" className="form-label">User Name :</label>
@@ -45,12 +37,6 @@ function Card() {
           </div>
         </div>
       </div> 
-
-
-
-
-
-
     </div>
   )
 }
