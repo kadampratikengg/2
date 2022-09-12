@@ -35,8 +35,8 @@ const Signupform =() => {
                     <input className="form__input" type="text" id="GST" placeholder="GST" />
                 </div>
             </div>
-            <div class="footer">
-                <button type="submit" class="btn">Register</button>
+            <div >
+                <button type="submit" class="btn btn-secondary">Next</button>
             </div>
         </div>
 )}

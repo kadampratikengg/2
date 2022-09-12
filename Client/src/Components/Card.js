@@ -7,7 +7,7 @@ function Card() {
     <div className="row">
       <div className="">
         <div className="card border border-danger">
-          <div className="card-body bg-success text-dark bg-opacity-25" style={{height: "350px"}}>
+          <div className="card-body bg-info text-dark bg-opacity-25" style={{height: "350px"}}>
           <button type="button" className="open me-5">Customer Login</button>
           <button type="button" className="open me-5">Authorize User</button>  
             <form className="px-4 py-3">
