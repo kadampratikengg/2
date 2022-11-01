@@ -6,7 +6,7 @@ function Navigation() {
     return (
         <>
             <nav class="navbar navbar-inverse  navbar-expand-lg" style={{marginBottom: "00px", borderRadius: '0px'}}>
-                <a class="navbar-brand" href="/Home">Groot</a>
+                <a class="navbar-brand" href="/Home">Servicing Hub</a>
               
                 { <button class="navbar-toggler btn-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation ">
                     <span class="navbar-toggler-icon"></span>
