@@ -9,6 +9,7 @@ import React from 'react'
 						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 					</ol>
 					<div className="carousel-inner">
+						
 						<div className="carousel-item active">
 							<img className="d-block w-10" src="https://wonderfulengineering.com/wp-content/uploads/2014/10/wallpaper-photos-31.jpg" alt="First slide" style={{ width: '100%', height: '100vh' }} />
 						</div>

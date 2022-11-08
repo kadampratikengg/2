@@ -19,14 +19,14 @@ function Navigation() {
                         <li><Link to="/Services">Services </Link></li>
                         <li><Link to="/Contact">Contact </Link></li>
                     </ul>
-                    <form class="navbar-form navbar-left" action="/action_page.php">
+                    {/* <form class="navbar-form navbar-left" action="/action_page.php">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Search" />
                         </div>
                         <button class="btn btn-default" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
-                    </form>
+                    </form> */}
 
                     <ul className="nav navbar-nav navbar-right d-inline ">
                         <li><a href="#" data-toggle="modal" data-target="#exampleModal">
