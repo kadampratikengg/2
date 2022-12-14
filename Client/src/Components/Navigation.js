@@ -29,18 +29,10 @@ function Navigation() {
                     </form> */}
 
                     <ul className="nav navbar-nav navbar-right d-inline ">
-                        <li><a href="#" data-toggle="modal" data-target="#exampleModal">
-                            <span className="glyphicon   glyphicon-log-in" ></span> Login
-                        </a>
-                        </li>
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModal"><span className="glyphicon   glyphicon-log-in" ></span> Login </a></li>
                         <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog" role="document">
                                 <div className="modal-content">
-                                    <div className="modal-header">
-                                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
                                     <div className="modal-body">
                                         <Card />
                                     </div>
@@ -53,9 +45,6 @@ function Navigation() {
                         <div className="modal fade" id="exampleModal2" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog" role="document">
                                 <div className="modal-content">
-                                    <div className="modal-header">
-
-                                    </div>
                                     <div className="modal-body">
                                         <Card1 />
                                     </div>

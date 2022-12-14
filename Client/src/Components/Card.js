@@ -1,43 +1,87 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import Signup from './Signupform'
-function Card() {
-  const navigate = useNavigate()
-  return (
-    <div className="row">
-      <div className="">
-        <div className="card border border-danger">
-          <div className="card-body bg-info text-dark bg-opacity-25" style={{height: "350px"}}>
-          <button type="button" className="open me-5">Customer Login</button>
-          <button type="button" className="open me-5">Authorize User</button>  
-            <form className="px-4 py-3">
-                <div className="mb-3">
-                  <label htmlFor="exampleDropdownFormEmail1" className="form-label">User Name :</label>
-                  <input type="email" className="form-control" id="exampleDropdownFormEmail1" placeholder="User"/>
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="exampleDropdownFormPassword1" className="form-label">Password :</label>
-                  <input type="password" className="form-control" id="exampleDropdownFormPassword1" placeholder="Password"/>
-                </div>
-              <div className="mb-3">
-                <div className="form-check">
-                  <input type="checkbox" className="form-check-input" id="dropdownCheck"/>
-                  <label className="form-check-label"  htmlFor="dropdownCheck">
-                    Remember me
-                  </label>
-                </div>
-              </div>
-              <button type="submit" className="btn btn-primary me-5">Sign In</button>
-              <button  className="btn btn-primary ms-5" onClick={()=>navigate("/Signupform")}>Sign Up</button>
-              
-            </form>
-            <div className="dropdown-divider"></div>
-            <a className="dropdown-item" href="#">Forgot password?</a>  
-          
+import React, { Component } from "react";
+
+export default class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: "",
+      password: "",
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    const { email, password } = this.state;
+    console.log(email, password);
+    fetch("http://localhost:5000/login-user", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data, "userRegister");
+        if (data.status == "ok") {
+          alert("login successful");
+          window.localStorage.setItem("token", data.data);
+          window.location.href = "./userDetails";
+        }
+      });
+  }
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <h3>Sign In</h3>
+
+        <div className="mb-3">
+          <label>Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+            onChange={(e) => this.setState({ email: e.target.value })}
+          />
+        </div>
+
+        <div className="mb-3">
+          <label>Password</label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password"
+            onChange={(e) => this.setState({ password: e.target.value })}
+          />
+        </div>
+
+        <div className="mb-3">
+          <div className="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              className="custom-control-input"
+              id="customCheck1"
+            />
+            <label className="custom-control-label" htmlFor="customCheck1">
+              Remember me
+            </label>
           </div>
         </div>
-      </div> 
-    </div>
-  )
+        <div className="d-grid">
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </div>
+        <p className="forgot-password text-right">
+          <a href="/Signupform">Sign Up</a>
+        </p>
+      </form>
+    );
+  }
 }
-export default Card

@@ -1,15 +1,11 @@
 .form{
-    background-color: rgba(105, 45, 45, 0.048);
+    
     border-radius: 5px;
     width: 50%;
     margin: 20px auto;
     
 }
 
-.form-body{
-    text-align: left;
-    padding: 30px;
-}
 
 .form-body > *{
     padding: 30px;
