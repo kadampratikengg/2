@@ -8,9 +8,9 @@ function Navigation() {
             <nav class="navbar navbar-inverse  navbar-expand-lg" style={{marginBottom: "00px", borderRadius: '0px'}}>
                 <a class="navbar-brand" href="/Home">Servicing Hub</a>
               
-                { <button class="navbar-toggler btn-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation ">
+                 <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" >
                     <span class="navbar-toggler-icon"></span>
-                </button> }
+                </button> 
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul className="nav navbar-nav d-inline">

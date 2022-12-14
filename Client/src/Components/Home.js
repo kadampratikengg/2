@@ -2,7 +2,7 @@ import React from 'react'
 	function Home() {
 		return (
 			<div>
-				<div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+				{/* <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
 					<ol className="carousel-indicators">
 						<li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
 						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -28,7 +28,7 @@ import React from 'react'
 						<span className="carousel-control-next-icon" aria-hidden="true"></span>
 						<span className="sr-only">Next</span>
 					</a>
-				</div>
+				</div> */}
 			</div>
 		)
 	}

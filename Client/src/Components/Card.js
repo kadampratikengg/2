@@ -1,46 +1,13 @@
-import React, { Component } from "react";
-
-export default class Login extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      email: "",
-      password: "",
-    };
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-  handleSubmit(e) {
-    e.preventDefault();
-    const { email, password } = this.state;
-    console.log(email, password);
-    fetch("http://localhost:5000/login-user", {
-      method: "POST",
-      crossDomain: true,
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      body: JSON.stringify({
-        email,
-        password,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data, "userRegister");
-        if (data.status == "ok") {
-          alert("login successful");
-          window.localStorage.setItem("token", data.data);
-          window.location.href = "./userDetails";
-        }
-      });
-  }
-  render() {
-    return (
-      <form onSubmit={this.handleSubmit}>
-        <h3>Sign In</h3>
-
+import React from 'react'
+function Card() {
+  return (
+    <div className="row">
+      <div className="" >
+        <div className="card border border-danger">
+          <div className="card-body  bg-light text-dark bg-opacity-25 " style={{height: "350px"}}>
+          <h3 className="card-title my-title text-center">Sign Up</h3>
+            <div className="mb-3 px-4 py-3">
+              
         <div className="mb-3">
           <label>Email address</label>
           <input
@@ -61,6 +28,9 @@ export default class Login extends Component {
           />
         </div>
 
+
+
+
         <div className="mb-3">
           <div className="custom-control custom-checkbox">
             <input
@@ -78,10 +48,29 @@ export default class Login extends Component {
             Submit
           </button>
         </div>
-        <p className="forgot-password text-right">
+        <p className="signup text-left">
+          <a href="/Signupform">Forget Password</a>
+        </p>
+        <p className="signup text-right">
           <a href="/Signupform">Sign Up</a>
         </p>
-      </form>
-    );
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>   
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
+export default Card
