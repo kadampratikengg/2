@@ -71,7 +71,7 @@ export default function App() {
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
                 <MDBIcon color='secondary' icon='home' className='me-2' />
-                415011 Maharashtra, India
+                Maharashtra, India
               </p>
               <p>
                 <MDBIcon color='secondary' icon='envelope' className='me-3' />

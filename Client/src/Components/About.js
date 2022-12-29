@@ -1,11 +1,8 @@
 import React from 'react'
-
 function About() {
   return (
     <div className="container">
-
       <h1>About</h1>
-
       <div class="card-group d-flex justify-content-around">
         <div class="row">
           <div class="col-sm-4">
@@ -37,15 +34,7 @@ function About() {
           </div>
         </div>
       </div>
-
-
-
-
-
     </div>
-
   )
 }
-
-
 export default About

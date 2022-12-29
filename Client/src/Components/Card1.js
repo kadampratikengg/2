@@ -8,12 +8,9 @@ function Card() {
             <h3 className="card-title my-title text-center">Guest User</h3>
             <div className="mb-3 px-4 py-3">
               <label htmlFor="Mobile" className="form-label">Mobile Number :</label>
-              <input type="email" className="form-control" id="Mobile" placeholder="Enter Your Mobile Number"/> <br/>
-              
+              <input type="tel" className="form-control" id="Mobile" placeholder="Enter Your Mobile Number"/> <br/>
               <label htmlFor="traking" className="form-label">Traking id :</label>
-              <input type="email" className="form-control" id="traking" placeholder="Enter Your Traking id"/> <br/>
-              
-
+              <input type="email" className="form-control" id="traking" placeholder="Enter Your Traking id"/> <br/>              
               <a href="#" className="btn btn-primary ">Search</a>
             </div>          
           </div>

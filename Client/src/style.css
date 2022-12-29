@@ -1,20 +1,29 @@
 .form{
     
     border-radius: 5px;
-    width: 50%;
-    margin: 20px auto;
-    
-}
-
-
-.form-body > *{
-    padding: 30px;
+    width: 80%;
+    margin: auto;
     font-size: calc(10px + 1vmin);
-
 }
+
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 30px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 .form__label{
     width: 50%;
+    text-align: left;
 }
 
 .navbar-toggler {

@@ -1,8 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const User = require("./MongoDB/User");
+const authRoute = require("./MongoDB/auth");
+
 const app = express();
 app.use(express.json());
+
 const url = "mongodb+srv://pratik:pratik@cluster0.kktrp4r.mongodb.net/?retryWrites=true&w=majority";
 const conn=mongoose.connect(url).
   catch(error => handleError(error));
@@ -13,7 +16,7 @@ const conn=mongoose.connect(url).
     console.log('not connected')
   }
 
-  
+  app.use("/auth",authRoute)
 app.listen(5000, () => {
     console.log("Server is running at port 5000");
   }); 
