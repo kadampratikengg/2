@@ -8,12 +8,6 @@ function Services() {
 
 
       <h1>Services</h1>
-
-
-     
-        
-    
-
       <div ClassName=" row">
         <div ClassName=" col-sm-6 " >
           <div ClassName="card m-3" >
@@ -34,7 +28,7 @@ function Services() {
           </div>
         </div>
       </div>
-     
+
 
 
     </div>

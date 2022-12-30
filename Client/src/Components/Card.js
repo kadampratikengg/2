@@ -26,8 +26,8 @@ function Card() {
                 />
               </div>
               <div className="mb-3">
-              <p className="signup text-right">
-                <a href="/Forget">Forget Password</a></p>
+                <p className="signup text-right">
+                  <a href="/Forget">Forget Password</a></p>
               </div>
               <div className="d-grid">
                 <button type="submit" className="btn btn-primary">
@@ -36,7 +36,7 @@ function Card() {
               </div>
               <br></br>
               <p className="signup text-center">
-                <a href="/Signupform">Sign Up</a>  
+                <a href="/Signupform">Sign Up</a>
               </p>
             </div>
           </div>

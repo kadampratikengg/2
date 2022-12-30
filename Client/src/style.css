@@ -29,5 +29,6 @@
 .navbar-toggler {
 
     background-color: red !important;
+    float: 'left'
    
 }

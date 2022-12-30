@@ -78,10 +78,10 @@ export default function App() {
                 info@servicinghub.in
               </p>
               <p>
-                <MDBIcon color='secondary' icon='phone' className='me-3' /> 
+                <MDBIcon color='secondary' icon='phone' className='me-3' />
               </p>
               <p>
-                <MDBIcon color='secondary' icon='print' className='me-3' /> 
+                <MDBIcon color='secondary' icon='print' className='me-3' />
               </p>
             </MDBCol>
           </MDBRow>
@@ -90,8 +90,8 @@ export default function App() {
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2022 Copyright : Servicing Hub
-        
-        
+
+
       </div>
     </MDBFooter>
   );
