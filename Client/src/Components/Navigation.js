@@ -1,6 +1,4 @@
 import React from 'react'
-import Card from './Card'
-import Card1 from './Card1'
 import { Link } from 'react-router-dom'
 function Navigation() {
     return (
@@ -28,7 +26,7 @@ function Navigation() {
                         </button>
                     </form> */}
 
-                    <ul className="nav navbar-nav navbar-right d-inline ">
+                    {/* <ul className="nav navbar-nav navbar-right d-inline ">
                         <li><a href="#" data-toggle="modal" data-target="#exampleModal"><span className="glyphicon   glyphicon-log-in" ></span> Login </a></li>
                         <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div className="modal-dialog" role="document">
@@ -51,7 +49,7 @@ function Navigation() {
                                 </div>
                             </div>
                         </div>
-                    </ul>
+                    </ul> */}
                 </div>
             </nav>
 
